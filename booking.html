@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a Booth | Exquisite 360 Booths</title>
+<meta name="description" content="Book the 360 Booth, Selfie Booth or Vintage Pod for your event with Exquisite 360 Booths. West Midlands and nationwide.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="booking-page">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Exquisite 360 Booths home">
+      <img src="source-facebook/assets/image-1.jpg" alt="Exquisite 360 Booths logo" width="56" height="56">
+      <span class="brand-text"><strong>Exquisite 360 Booths</strong><small>West Mids &amp; Nationwide</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html#booths">Booths</a>
+      <a href="index.html#strips">Print strips</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="index.html#how">How to book</a>
+      <a href="index.html#contact">Contact</a>
+      <a class="nav-cta" href="booking.html" aria-current="page">Book a booth</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-intro booking-intro">
+    <div class="wrap">
+      <h1>Book your booth</h1>
+      <p class="lead">Tell us about your event in four quick steps. You will get a booking reference and summary to send to us, and we will confirm availability for your date.</p>
+    </div>
+  </section>
+
+  <section class="section booking">
+    <div class="wrap booking-grid">
+
+      <aside class="booking-aside">
+        <ol class="progress" aria-label="Booking steps">
+          <li data-progress="0" class="is-active" aria-current="step"><span>1</span>Booth</li>
+          <li data-progress="1"><span>2</span>Event</li>
+          <li data-progress="2"><span>3</span>Your details</li>
+          <li data-progress="3"><span>4</span>Review</li>
+        </ol>
+        <div class="aside-note">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.4-3 7.9-7 9-4-1.1-7-4.6-7-9V6l7-3z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8.5 12l2.4 2.4L15.5 10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <p><strong>Public Liability Insured.</strong> If your venue needs our insurance details, just mention it in your notes.</p>
+        </div>
+        <div class="aside-note">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0113 0c0 5-6.5 11-6.5 11z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          <p><strong>West Midlands &amp; Nationwide.</strong> Based in Birmingham and happy to travel.</p>
+        </div>
+      </aside>
+
+      <div class="booking-panel">
+        <form id="bookingForm" novalidate>
+
+          <fieldset class="step is-active" data-step="0">
+            <legend>Which booth would you like?</legend>
+            <div class="booth-options">
+              <label class="booth-option">
+                <input type="radio" name="booth" value="360 Booth" required>
+                <span class="opt-media"><img src="source-instagram/assets/image-14.jpg" alt=""></span>
+                <span class="opt-text"><strong>360 Booth</strong><small>Video clips with a personalised overlay</small></span>
+              </label>
+              <label class="booth-option">
+                <input type="radio" name="booth" value="Selfie Booth">
+                <span class="opt-media"><img src="source-instagram/assets/image-15.jpg" alt=""></span>
+                <span class="opt-text"><strong>Selfie Booth</strong><small>Photos and customised print strips</small></span>
+              </label>
+              <label class="booth-option">
+                <input type="radio" name="booth" value="Vintage Pod">
+                <span class="opt-media opt-art"><svg viewBox="0 0 80 80" aria-hidden="true"><path d="M24 68V32a16 16 0 0132 0v36" fill="none" stroke="#e0b25e" stroke-width="2"/><path d="M18 68h44" stroke="#e0b25e" stroke-width="2" stroke-linecap="round"/><rect x="32" y="30" width="16" height="20" rx="2" fill="none" stroke="#f3e3bf" stroke-width="1.6"/><circle cx="40" cy="38" r="4" fill="none" stroke="#f3e3bf" stroke-width="1.6"/></svg></span>
+                <span class="opt-text"><strong>Vintage Pod</strong><small>A classic photo pod look</small></span>
+              </label>
+              <label class="booth-option">
+                <input type="radio" name="booth" value="Not sure yet - help me choose">
+                <span class="opt-media opt-art"><svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="24" fill="none" stroke="#e0b25e" stroke-width="2" stroke-dasharray="1 6" stroke-linecap="round"/><path d="M33 34a7 7 0 1110 6.3c-1.8.9-3 2.3-3 4.2V47" fill="none" stroke="#f3e3bf" stroke-width="2" stroke-linecap="round"/><circle cx="40" cy="54" r="1.8" fill="#f3e3bf"/></svg></span>
+                <span class="opt-text"><strong>Not sure yet</strong><small>Help me choose</small></span>
+              </label>
+            </div>
+            <p class="field-error" data-error="booth" hidden>Please choose a booth option.</p>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="hours">How long would you like the booth?</label>
+                <select id="hours" name="hours" required>
+                  <option value="">Select hours</option>
+                  <option>1 hour</option>
+                  <option>2 hours</option>
+                  <option>3 hours</option>
+                  <option>4 hours</option>
+                  <option>5 hours or more</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+            </div>
+
+            <fieldset class="checks">
+              <legend>I am interested in</legend>
+              <label><input type="checkbox" name="extras" value="Customised print strips"> Customised print strips</label>
+              <label><input type="checkbox" name="extras" value="Personalised overlay (names, date or monogram)"> Personalised overlay (names, date or monogram)</label>
+              <label><input type="checkbox" name="extras" value="Backdrop styling"> Backdrop styling</label>
+            </fieldset>
+          </fieldset>
+
+          <fieldset class="step" data-step="1" hidden>
+            <legend>About your event</legend>
+            <div class="field-row">
+              <div class="field">
+                <label for="eventType">Type of event</label>
+                <select id="eventType" name="eventType" required>
+                  <option value="">Select event type</option>
+                  <option>Wedding</option>
+                  <option>Engagement</option>
+                  <option>Birthday</option>
+                  <option>Anniversary</option>
+                  <option>Corporate event</option>
+                  <option>Awards evening</option>
+                  <option>Ball or gala</option>
+                  <option>Christmas party</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="eventDate">Event date</label>
+                <input id="eventDate" name="eventDate" type="date" required>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="startTime">Booth start time</label>
+                <input id="startTime" name="startTime" type="time" required>
+              </div>
+              <div class="field">
+                <label for="endTime">Booth finish time</label>
+                <input id="endTime" name="endTime" type="time">
+              </div>
+            </div>
+            <div class="field">
+              <label for="venueName">Venue name</label>
+              <input id="venueName" name="venueName" type="text" autocomplete="off" required>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="venueAddress">Venue address</label>
+                <input id="venueAddress" name="venueAddress" type="text" autocomplete="off">
+              </div>
+              <div class="field">
+                <label for="venuePostcode">Venue postcode</label>
+                <input id="venuePostcode" name="venuePostcode" type="text" autocomplete="off" required>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="guests">Approximate number of guests</label>
+                <input id="guests" name="guests" type="number" min="1" inputmode="numeric">
+              </div>
+              <div class="field">
+                <label for="setting">Indoor or outdoor?</label>
+                <select id="setting" name="setting">
+                  <option value="">Select</option>
+                  <option>Indoor</option>
+                  <option>Outdoor (covered)</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="theme">Theme, colours or overlay wording</label>
+              <input id="theme" name="theme" type="text" placeholder="For example: black and gold, names and date for the overlay">
+            </div>
+          </fieldset>
+
+          <fieldset class="step" data-step="2" hidden>
+            <legend>Your details</legend>
+            <div class="field">
+              <label for="fullName">Full name</label>
+              <input id="fullName" name="fullName" type="text" autocomplete="name" required>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="phone">Phone number</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="contactPref">How should we contact you?</label>
+                <select id="contactPref" name="contactPref">
+                  <option>Instagram message</option>
+                  <option>Facebook message</option>
+                  <option>Email</option>
+                  <option>Phone call or text</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="heard">How did you hear about us?</label>
+                <select id="heard" name="heard">
+                  <option value="">Select</option>
+                  <option>Instagram</option>
+                  <option>Facebook</option>
+                  <option>Saw you at an event</option>
+                  <option>Recommendation</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="notes">Anything else we should know?</label>
+              <textarea id="notes" name="notes" rows="4" placeholder="Access, set-up space, venue requirements or questions"></textarea>
+            </div>
+            <label class="consent"><input type="checkbox" name="consent" id="consent" required> I understand this is a booking request and my booking is confirmed once Exquisite 360 Booths has checked availability.</label>
+          </fieldset>
+
+          <fieldset class="step" data-step="3" hidden>
+            <legend>Check your request</legend>
+            <dl class="summary" id="summary"></dl>
+          </fieldset>
+
+          <div class="form-nav">
+            <button type="button" class="btn btn-line" data-back hidden>
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path d="M19 12H6M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Back</button>
+            <button type="button" class="btn btn-gold" data-next>Continue
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <button type="submit" class="btn btn-gold" data-submit hidden>Create booking request</button>
+          </div>
+        </form>
+
+        <div class="confirmation" id="confirmation" hidden tabindex="-1">
+          <svg class="confirm-ring" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="34" fill="none" stroke="#e0b25e" stroke-width="1.5" stroke-dasharray="1 6" stroke-linecap="round"/><path d="M26 41l9 9 19-20" fill="none" stroke="#e0b25e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h2>Your booking request is ready</h2>
+          <p>Your reference is <strong class="ref" id="refCode"></strong>.</p>
+          <p>Send your reference and the summary below to us by Instagram or Facebook message, and we will check availability and confirm your booking.</p>
+          <dl class="summary" id="finalSummary"></dl>
+          <div class="contact-actions">
+            <button type="button" class="btn btn-line" id="copySummary">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><rect x="8" y="8" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M16 8V5a1 1 0 00-1-1H5a1 1 0 00-1 1v10a1 1 0 001 1h3" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>Copy summary</button>
+            <a class="btn btn-gold icon-btn" href="https://www.instagram.com/exquisite360booths/" target="_blank" rel="noopener" aria-label="Message Exquisite 360 Booths on Instagram"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>Instagram</a>
+            <a class="btn btn-gold icon-btn" href="https://www.facebook.com/p/Exquisite-Booths-100088308721433/" target="_blank" rel="noopener" aria-label="Message Exquisite Booths on Facebook"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path d="M14 8h3V4h-3c-2.8 0-5 2.2-5 5v2H7v4h2v9h4v-9h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg>Facebook</a>
+          </div>
+          <p class="copy-status" id="copyStatus" role="status" aria-live="polite"></p>
+          <button type="button" class="text-link plain" id="newBooking">Start another booking</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img src="source-facebook/assets/image-1.jpg" alt="Exquisite 360 Booths logo" width="120" height="120" loading="lazy">
+      <p>360 Booth &middot; Selfie Booth &middot; Vintage Pod<br>West Midlands &amp; Nationwide<br>Public Liability Insured</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="index.html#booths">Booths</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="index.html#how">How to book</a>
+      <a href="booking.html">Book a booth</a>
+    </nav>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/exquisite360booths/" target="_blank" rel="noopener" aria-label="Exquisite 360 Booths on Instagram"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg></a>
+      <a href="https://www.facebook.com/p/Exquisite-Booths-100088308721433/" target="_blank" rel="noopener" aria-label="Exquisite Booths on Facebook"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 8h3V4h-3c-2.8 0-5 2.2-5 5v2H7v4h2v9h4v-9h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
+    </div>
+  </div>
+  <p class="copy wrap">&copy; <span data-year>2026</span> Exquisite 360 Booths. Capturing the best moments..</p>
+</footer>
+<script src="main.js"></script>
+<script src="booking.js"></script>
+</body>
+</html>
